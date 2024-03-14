@@ -1,4 +1,4 @@
-import {jwtDecode} from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
 
 export default () => {
   const useAuthToken = () => useState("auth_token");
@@ -67,7 +67,6 @@ export default () => {
       await refreshToken();
       reRefreshAccessToken();
     }, newRefreshToken);
-    console.log(jwt);
   };
 
   const getUser = () => {

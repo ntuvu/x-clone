@@ -26,6 +26,7 @@ export default defineEventHandler(async (event) => {
   tweets.forEach((tweet) => {
     tweet.repliesCount = tweet.replies.length;
     tweet.postedAtHuman = human(tweet.createdAt);
+    tweet.handle = "@" + tweet.author.username;
   });
   return {
     tweets: tweets,
