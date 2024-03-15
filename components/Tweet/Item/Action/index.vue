@@ -3,7 +3,7 @@
     <div
       :class="`p-2 rounded-full group-hover:bg-blue-100 group-hover:text-blue-400p dark:group-hover:bg-opacity ${defaultTransition}`"
     >
-      <ChatIcon class="w-5 h-5" />
+      <slot class="w-5 h-5" name="icon" />
     </div>
 
     <span class="ml-1 group-hover:text-blue-400"> 5 </span>
